@@ -35,7 +35,7 @@ const GalleryPicker = props => {
         </div>
     )
 }
-ImagePicker.propTypes = {
+GalleryPicker.propTypes = {
     imagesRecived: PropTypes.array.isRequired,
     returnImages: PropTypes.func.isRequired,  
 }

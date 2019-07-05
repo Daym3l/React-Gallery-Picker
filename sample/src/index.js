@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import GalleryPicker from '../../src/index';
 
-const IMG1 = "../assets/images/1.jpg"
+const IMG1 = "public/assets/images/1.jpg"
 
 const App = () => {
     const getImages = images => {
