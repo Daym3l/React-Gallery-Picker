@@ -1,0 +1,22 @@
+.imgPicker {
+    border: 2px dotted #000;
+    height: 100px;
+    width: 100px;
+    transition: transform .2s;
+}
+.imgPicker:hover {
+    transform: scale(1.2);
+}
+.selected {
+  border: 2px dotted #4caf50;
+    margin: 2px;
+    height: 100px;
+    width: 100px;
+    opacity: .5
+ }
+
+ .container {
+    position: relative;
+    width: 100%;
+   display: table;
+ }
