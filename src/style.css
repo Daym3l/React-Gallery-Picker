@@ -1,7 +1,8 @@
 .imgPicker {
     border: 2px dotted #000;
-    height: 100px;
-    width: 100px;
+    margin: 5px;
+    height: 200px;
+    width: 200px;
     transition: transform .2s;
 }
 .imgPicker:hover {
@@ -9,9 +10,9 @@
 }
 .selected {
   border: 2px dotted #4caf50;
-    margin: 2px;
-    height: 100px;
-    width: 100px;
+    margin: 5px;
+    height: 200px;
+    width: 200px;
     opacity: .5
  }
 
