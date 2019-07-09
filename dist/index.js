@@ -33,7 +33,7 @@ var GalleryPicker = function GalleryPicker(props) {
     _react2.default.useEffect(function () {
         var imageList = [];
         imagesRecived.forEach(function (el, i) {
-            imageList.push({ id: i, src: el, selected: false });
+            imageList.push({ id: i, src: el.url, selected: false, title: el.name });
         });
         setImages(imageList);
     }, []);
@@ -78,7 +78,7 @@ var GalleryPicker = function GalleryPicker(props) {
         'div',
         { className: 'container' },
         images.map(function (img, i) {
-            return _react2.default.createElement('img', { src: img.src, alt: '', key: i, className: img.selected ? "selected" : "imgPicker", onClick: function onClick() {
+            return _react2.default.createElement('img', { 'data-tip': img.title, 'data-for': "images", src: img.src, alt: img.title, key: i, className: img.selected ? "selected" : "imgPicker", onClick: function onClick() {
                     return onImageClick(img.id);
                 } });
         })
