@@ -22,7 +22,9 @@
   "keywords": [
     "gallery",
     "react",
-    "picker"
+    "picker",
+    "image",
+    "selector"
   ],
   "author": "Daym3l",
   "license": "MIT",
