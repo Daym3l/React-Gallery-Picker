@@ -26,9 +26,8 @@ import Gallery from "react-gallery-picker";
 const IMAGE1 = "/assets/images/1.jpg"
 const IMAGE2 = "/assets/images/2.jpg"
 const IMAGE3 = "/assets/images/3.jpg"
-const IMAGE4 = "/assets/images/4.png"
-const IMAGE5 = "/assets/images/5.jpg"
-const IMAGE_LIST = [IMAGE1, IMAGE2, IMAGE3, IMAGE4, IMAGE5];
+
+const IMAGE_LIST = [{ url: IMAGE1, name: "imagen 1" },{ url: IMAGE2, name: "imagen 2" } ,{ url: IMAGE3, name: "imagen 3" } ];
 
 
 export default () => {
