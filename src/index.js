@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 import PropTypes from 'prop-types';
 
+
 const GalleryPicker = props => {
 
     const [images, setImages] = React.useState([]);
@@ -10,7 +11,7 @@ const GalleryPicker = props => {
     React.useEffect(() => {
         let imageList = [];
         imagesRecived.forEach((el, i) => {
-            imageList.push({ id: i, src: el, selected: false })
+            imageList.push({ id: i, src: el.url, selected: false, title: el.name })
         });
         setImages(imageList);
     }, []);
@@ -30,14 +31,14 @@ const GalleryPicker = props => {
     }
 
     return (
-        <div className="container">
-            {images.map((img, i) => <img src={img.src} alt="" key={i} className={img.selected ? "selected" : "imgPicker"} onClick={() => onImageClick(img.id)} />)}
+        <div className="container">         
+            {images.map((img, i) => <img data-tip={img.title} data-for={"images"} src={img.src} alt={img.title} key={i} className={img.selected ? "selected" : "imgPicker"} onClick={() => onImageClick(img.id)} />)}
         </div>
     )
 }
 GalleryPicker.propTypes = {
     imagesRecived: PropTypes.array.isRequired,
-    returnImages: PropTypes.func.isRequired,  
+    returnImages: PropTypes.func.isRequired,
 }
 
 export default GalleryPicker;
