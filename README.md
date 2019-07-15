@@ -1,7 +1,8 @@
 Gallery Picker with React js
 ===
 
-[![Code version](https://img.shields.io/badge/version-1.1.0-blue.svg)](http://www.npmjs.com/package/react-gallery-picker)
+[![Code version](https://img.shields.io/badge/version-1.1.1-blue.svg)](http://www.npmjs.com/package/react-gallery-picker)
+See the Example [`Image Picker`](https://daym3l.github.io/react-gallery-picker/)
 
 React gallery picker is a React Js component for building image galleries and select images
 
