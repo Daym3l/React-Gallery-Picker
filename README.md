@@ -34,7 +34,7 @@ const IMAGE_LIST = [{ url: IMAGE1, name: "imagen 1" },{ url: IMAGE2, name: "imag
 
 export default () => {
     const getImages = images => {
-        // Do something with the selected images :)
+        // Do something with the selected images)
         console.log(images);
     }
 
